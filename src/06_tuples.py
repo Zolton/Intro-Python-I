@@ -17,12 +17,19 @@ automatically.
 
 import math
 
+
 def dist(a, b):
     """Compute the distance between two x,y points."""
     x0, y0 = a  # Destructuring assignment
     x1, y1 = b
-    
+
     return math.sqrt((x1 - x0)**2 + (y1 - y0)**2)
+
+    # (-16^2) + 65^2
+    # -256 + 4225
+    # sqrt.3969
+    # 63
+
 
 a = (2, 7)   # <-- x,y coordinates stored in tuples
 b = (-14, 72)
@@ -31,14 +38,21 @@ b = (-14, 72)
 print("Distance is: {:.2f}".format(dist(a, b)))
 
 
-
 # Write a function `print_tuple` that prints all the values in a tuple
 
 # YOUR CODE HERE
+
+def print_tuple(zas):
+    print("Start function print_tuple")
+    print("the entire tuple is: ", zas)
+    print("The tuple by line is: ")
+    for gabba in zas:
+        print(gabba)
+
 
 t = (1, 2, 5, 7, 99)
 print_tuple(t)  # Prints 1 2 5 7 99, one per line
 
 # Declare a tuple of 1 element then print it
-u = (1)  # What needs to be added to make this work?
+u = (1, )  # What needs to be added to make this work?
 print_tuple(u)
